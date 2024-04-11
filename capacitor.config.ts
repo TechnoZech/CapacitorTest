@@ -6,7 +6,8 @@ const config: CapacitorConfig = {
   webDir: 'build',
   bundledWebRuntime: false,
   server: {
-    url: 'http://192.168.137.1:3000',
+    // url: 'http://192.168.137.1:3000',
+    url: 'https://capacitor-test-ten.vercel.app/',
     cleartext: true
   }
 };
