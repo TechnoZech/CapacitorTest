@@ -51,6 +51,7 @@ function App() {
 				<p>Welcome!</p>
 				<button onClick={signIn}>Login with google</button>
 				{user !== null ? <p>{user.email}</p> : null}
+        
 			</header>
 		</div>
 	);
