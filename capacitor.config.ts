@@ -20,6 +20,3 @@ const config: CapacitorConfig = {
 };
 
 export default config;
-
-// id: 188386290850-9fp1l8ckjp146sh83djf2tdfk7fq478i.apps.googleusercontent.com
-// secret: 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
