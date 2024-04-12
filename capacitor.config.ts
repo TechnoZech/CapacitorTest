@@ -6,14 +6,13 @@ const config: CapacitorConfig = {
   webDir: 'build',
   bundledWebRuntime: false,
   server: {
-    // url: 'http://192.168.137.1:3000',
-    url: 'https://capacitor-test-ten.vercel.app/',
+    url: process.env.REACT_APP_BASE_URL,
     cleartext: true
   },
   "plugins": {
     "GoogleAuth": {
       "scopes": ["profile", "email"],
-      "serverClientId": "188386290850-9fp1l8ckjp146sh83djf2tdfk7fq478i.apps.googleusercontent.com",
+      "serverClientId": process.env.REACT_APP_GOOGLE_CLIENT_ID,
       "forceCodeForRefreshToken": true
     }
   }

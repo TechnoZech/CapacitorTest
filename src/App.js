@@ -5,8 +5,7 @@ import { useState, useEffect } from "react";
 
 function App() {
 	GoogleAuth.initialize({
-		clientId:
-			"188386290850-9fp1l8ckjp146sh83djf2tdfk7fq478i.apps.googleusercontent.com",
+		clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID,
 		scopes: ["profile", "email"],
 		grantOfflineAccess: true,
 	});
